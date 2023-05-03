@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { HorizontalCarousel } from '@/components/horizontal-carousel';
 import { VerticalCarousel } from '@/components/vertical-carousel';
-import { ProductCardContext } from './__provider';
+import { ProductCardContext } from '../provider';
 
 export default function Home({ data }) {
   const cardStyle = useContext(ProductCardContext);

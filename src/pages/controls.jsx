@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
-import { ProductCardContext } from './__provider';
+import { ProductCardContext } from '../provider';
 import { useTheme } from 'next-themes';
 
 const themes = [

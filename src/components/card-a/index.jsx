@@ -12,6 +12,7 @@ export default function CardA({ src, title, price, rating }) {
           width={344}
           height={162}
           loading="lazy"
+          loader={'blur'}
           className="h-full w-full rounded-md object-cover object-left-top transition-opacity group-hover:opacity-30"
         />
         <button className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center rounded-full bg-white hover:bg-rose-200">

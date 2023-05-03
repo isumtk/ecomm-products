@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '@/styles/globals.css';
-import { AppProvider } from './__provider';
+import { AppProvider } from '../provider';
 
 export default function App({ Component, pageProps }) {
   return (

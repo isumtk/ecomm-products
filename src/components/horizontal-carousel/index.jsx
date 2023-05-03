@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import Image from 'next/image';
 import { CardA, CardB } from '@/components';
 import PropTypes from 'prop-types';
-import { ProductCardContext } from '@/pages/__provider';
+import { ProductCardContext } from '@/provider';
 
 export function HorizontalCarousel({ data }) {
   const { productCard } = useContext(ProductCardContext);

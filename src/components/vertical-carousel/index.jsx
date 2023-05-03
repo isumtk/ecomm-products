@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Image from 'next/image';
 import { CardA, CardB } from '@/components';
 import PropTypes from 'prop-types';
-import { ProductCardContext } from '@/pages/__provider';
+import { ProductCardContext } from '@/provider';
 
 export function VerticalCarousel({ data }) {
   const { productCard } = useContext(ProductCardContext);

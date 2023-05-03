@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from 'next-themes';
 
 export const ProductCardContext = createContext();
-
 export function AppProvider({ children }) {
   const [productCard, setProductCard] = useState({
     type: 'cardA',
