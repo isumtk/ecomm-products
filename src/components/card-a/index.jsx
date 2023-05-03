@@ -28,7 +28,12 @@ export default function CardA({ src, title, price, rating }) {
           <div className=" font-semibold">{title}</div>
           <div>$ {price}</div>
           <div className="flex items-center gap-1">
-            <StarRatingComponent editing={false} starCount={5} value={rating} />
+            <StarRatingComponent
+              editing={false}
+              starCount={5}
+              starColor="#5e81ac"
+              value={rating}
+            />
             {Number.parseFloat(rating).toFixed(1)}
           </div>
         </div>

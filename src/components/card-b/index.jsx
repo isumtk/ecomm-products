@@ -21,7 +21,12 @@ export default function CardB({ src, title, price, rating }) {
           {title} <span>${price}</span>
         </div>
         <div className="flex items-center gap-1">
-          <StarRatingComponent editing={false} starCount={5} value={rating} />
+          <StarRatingComponent
+            editing={false}
+            starCount={5}
+            starColor="#5e81ac"
+            value={rating}
+          />
           {Number.parseFloat(rating).toFixed(1)}
         </div>
       </section>
