@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { HorizontalCarousel } from '@/components/horizontal-carousel';
