@@ -13,7 +13,6 @@ export default function CardB({ src, title, price, rating }) {
           width={360}
           height={360}
           loading="lazy"
-          loader={'blur'}
           className="h-full rounded-md object-cover object-top"
         />
       </section>
