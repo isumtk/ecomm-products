@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
-
+import StarRatingComponent from 'react-star-rating-component';
 export default function CardA({ src, title, price, rating }) {
   return (
     <article className="h-[440px] w-[360px] rounded bg-th-primary p-2 text-th-primary-focus">
@@ -27,7 +27,10 @@ export default function CardA({ src, title, price, rating }) {
         <div className="pt-6">
           <div className=" font-semibold">{title}</div>
           <div>$ {price}</div>
-          <div>{rating}</div>
+          <div className="flex items-center gap-1">
+            <StarRatingComponent editing={false} starCount={5} value={rating} />
+            {Number.parseFloat(rating).toFixed(1)}
+          </div>
         </div>
         <button className="rounded bg-th-accent p-2 text-th-primary-focus transition-colors">
           Add to cart

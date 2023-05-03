@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
+import StarRatingComponent from 'react-star-rating-component';
 
 export default function CardB({ src, title, price, rating }) {
   return (
@@ -19,7 +20,10 @@ export default function CardB({ src, title, price, rating }) {
         <div className="flex w-full items-center justify-between uppercase">
           {title} <span>${price}</span>
         </div>
-        <div>{rating}</div>
+        <div className="flex items-center gap-1">
+          <StarRatingComponent editing={false} starCount={5} value={rating} />
+          {Number.parseFloat(rating).toFixed(1)}
+        </div>
       </section>
     </article>
   );
