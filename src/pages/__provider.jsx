@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'next-themes';
 
@@ -9,16 +9,6 @@ export function AppProvider({ children }) {
     type: 'cardA',
     scrollType: 'horizontal',
   });
-
-  // useEffect(() => {
-  //   setProductCard(
-  //     JSON.parse(JSON.stringify(window.sessionStorage.getItem('product')))
-  //   );
-  // }, []);
-
-  // useEffect(() => {
-  //   window.sessionStorage.setItem('product', productCard);
-  // }, [productCard]);
 
   return (
     <ThemeProvider>
