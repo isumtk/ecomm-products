@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { CardA, CardB } from '@/components';
 import PropTypes from 'prop-types';
 import { ProductCardContext } from '@/provider';
@@ -32,7 +32,7 @@ export function HorizontalCarousel({ data }) {
           );
         })}
       </div>
-      <div className="flex items-center justify-center gap-8">
+      {/* <div className="flex items-center justify-center gap-8">
         <button className="flex h-14 w-14 items-center justify-center">
           <Image
             alt="back-arrow"
@@ -49,7 +49,7 @@ export function HorizontalCarousel({ data }) {
             src={'/assets/icons/chevron-right.svg'}
           />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

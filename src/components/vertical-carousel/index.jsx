@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { CardA, CardB } from '@/components';
 import PropTypes from 'prop-types';
 import { ProductCardContext } from '@/provider';
@@ -8,7 +8,7 @@ export function VerticalCarousel({ data }) {
   const { productCard } = useContext(ProductCardContext);
   return (
     <div className="relative mx-auto flex h-[800px] justify-center overflow-y-auto">
-      <div className="sticky top-0 flex h-full flex-col items-center justify-center gap-8">
+      {/* <div className="sticky top-0 flex h-full flex-col items-center justify-center gap-8">
         <button className="flex h-14 w-14 items-center justify-center">
           <Image
             alt="back-arrow"
@@ -25,7 +25,7 @@ export function VerticalCarousel({ data }) {
             src={'/assets/icons/chevron-down.svg'}
           />
         </button>
-      </div>
+      </div> */}
       <div className="flex h-full flex-col gap-2">
         {data.products.map((product) => {
           return productCard.type === 'cardA' ? (

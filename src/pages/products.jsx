@@ -25,7 +25,7 @@ export default function Home({ data }) {
       {cardStyle.productCard.scrollType === 'vertical' ? (
         <VerticalCarousel data={data} />
       ) : (
-        <div className="flex h-full w-full flex-1 items-center justify-center overflow-hidden">
+        <div className="flex h-full w-full flex-1 items-center justify-center overflow-auto">
           <HorizontalCarousel data={data} />
         </div>
       )}
